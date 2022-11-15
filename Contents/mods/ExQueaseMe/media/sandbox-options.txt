@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option ExQueaseMe.ReduceQuease = {
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 8,
+    page = ExQueaseMe,
+    translation = ExQueaseMe_ReduceQuease,
+}
