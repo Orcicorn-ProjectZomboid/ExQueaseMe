@@ -1,0 +1,44 @@
+version=1
+id=2889076842
+title=ExQueaseMe
+description="ExQuease Me" takes a more subtle approach to making gas masks functional in zomboid without drastically changing the overall gameplay.  In essence Gas Masks now slightly reduce your sickness gains around zombies, but rapidly decreases your sickness when you're away from them.
+description=
+description=With default settings you gain 0.7 sickness every 10 minutes when around a pile of corpses.  With a gas mask equipped you will now gain 0.5 sickness.  This extends the time needed to get sick by about 3 hours.  Typically 5 hours gets you deep into Queasy, now it'll take closer to 8 hours.
+description=
+description=However, if you are away from corpses and "Dequeasing", in the base game that'll take approximately 5 hours as well.  With the gas mask however, you can accomplish the exact same results in approximately one hour.   You can increase or decrease this value by adjusting the sandbox settings for how much sickness is removed every 10 minutes.
+description=
+description=[h1]Supported Gas Masks[/h1]
+description=I've added built-in support for a variety of popular mods (as well as the base game) that add gas mask to the game.  These currently include
+description=[list]
+description=  [*] Authentic Z
+description=  [*] Brita's Armor Pack
+description=  [*] Swat Pack
+description=  [*] Paw Low Loot
+description=  [*] Undead Survivor
+description=  [*] Scrap Amor
+description=  [*] They Knew
+description=  [*] Toxic Fog
+description=  [*] Stalker Amor Pack
+description=  [*] Asura Chi
+description=[/list]
+description=
+description=Mod makers can easily add support by simply adding "[i]Tags=GasMask[/i]" to their item definitions.  Any item with this tag will automatically be recognized as a valid gas mask and when equipped will handle all the DeQuease routines.
+description=
+description=[h1]Sandbox Settings[/h1]
+description=There is new Sandbox setting called "Remove Queasiness" which accepts values from 0 to 100 with 8 being the default.  This is the amount of sickness you would like removed from your character, every 10 minutes, while wearing a mask, while also being away from a pile of corpses.
+description=
+description=[h1]Translations[/h1]
+description=ExQueaseMe currently supports English.  You can contrbute translations [url=https://steamcommunity.com/workshop/filedetails/discussion/2889076842/4783413655243850011/]here[/url].
+description=
+description=[h1]Built for RoyaleWithCheese[/h1]
+description=ExQueaseMe was built for the RoyaleWithCheeseTV [i](aka: Jennifer)[/i] multiplayer server. It's 100% designed to suit their needs and their use-case.  Check out his stream on [url=https://twitch.tv/royalewithcheesetv[/url]Twitch[/url]
+description=
+description=[quote]
+description=ExQuease Me is Open-Source and published on [url=https://github.com/Orcicorn-ProjectZomboid/ExQueaseMe]Github[/url].
+description=Repackage, redistribute, recode, whatever, I don't care, do as you please.
+description=Credit would be appreciated.
+description=
+description=[img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/like_favorite.gif[/img] [url=https://ko-fi.com/orcicorn][img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/kofi.png[/img][/url]
+description=[/quote]
+tags=Build 41;Clothing/Armor;Items;Misc;Multiplayer
+visibility=public
