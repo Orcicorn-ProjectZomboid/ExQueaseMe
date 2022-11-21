@@ -1,0 +1,5 @@
+Sandbox_RU = {
+    Sandbox_ExQueaseMe = "- САМОСБОР УХОДИ!",
+    Sandbox_ExQueaseMe_ReduceQuease = "Уменьшение тошнотности",
+    Sandbox_ExQueaseMe_ReduceQuease_tooltip = "Коэффицент, снимаемой каждые 10 минут тошноты, на удалении от мертвых тел.<LINE>Дополнение для уже встроенного в игру. Выставьте 0 чтобы отключить.",
+}
