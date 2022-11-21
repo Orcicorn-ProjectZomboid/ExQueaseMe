@@ -7,7 +7,8 @@ local OEQM = {}
 OEQM.Loading = true;                    -- Is the mod loading?
 OEQM.WorkingMasks = {};                 -- Array of available gas masks
 OEQM.EnableReduction = false;           -- Should dequease be enabled?
-OEQM.ReduceQuease = nil;                -- How much to reduce the quease by (line 80)
+OEQM.ReduceQuease = nil;                -- How much to reduce the quease by (set on 81, used 107)
+OEQM.ReduceQueaseGain = nil;            -- How much to reduce the quease gain by (set on 82, use 104)
 OEQM.PreviousSickness = nil;            -- Last known sickness value
 
 -- --------------------------------------------------------------- --
@@ -78,6 +79,7 @@ end
 -- --------------------------------------------------------------- --
 function ExQueaseMe.onLogin()
     OEQM.ReduceQuease = SandboxVars.ExQueaseMe.ReduceQuease or 8;
+    OEQM.ReduceQueaseGain = SandboxVars.ExQueaseMe.ReduceQueaseGain or 0.2;
     ExQueaseMe.loadWorkingMasks();
     OEQM.EnableReduction = ExQueaseMe.isEquipped();
     OEQM.Loading = false;
@@ -98,10 +100,10 @@ function ExQueaseMe.reduceQuease()
     -- If you're around bodies then your sickness is reduced in gain (you can still see the gross)
     -- however if you're not around bodies, we rapidly loose queasiness
     if OEQM.PreviousSickness < bodyDamage:getFoodSicknessLevel() then
-        -- Around bodies (Reduce gain by 0.2.  Gain is about 0.7 every 10 minutes, thus down to 0.5 this way)
-        bodyDamage:setFoodSicknessLevel(bodyDamage:getFoodSicknessLevel() - 0.2);
+        -- Around bodies (Reduce Queasiness gain)
+        bodyDamage:setFoodSicknessLevel(bodyDamage:getFoodSicknessLevel() - OEQM.ReduceQueaseGain);
     else
-        -- Not around bodies (Full configured reduction)
+        -- Not around bodies (Reduce Queasiness)
         bodyDamage:setFoodSicknessLevel(bodyDamage:getFoodSicknessLevel() - OEQM.ReduceQuease);
     end
 end
