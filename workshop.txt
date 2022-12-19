@@ -30,7 +30,7 @@ description=[h1]Sandbox Settings[/h1]
 description=There is new Sandbox setting called "Remove Queasiness" which accepts values from 0 to 100 with 8 being the default.  This is the amount of sickness you would like removed from your character, every 10 minutes, while wearing a mask, while also being away from a pile of corpses.
 description=
 description=[h1]Translations[/h1]
-description=ExQueaseMe currently supports English.  You can contrbute translations [url=https://steamcommunity.com/workshop/filedetails/discussion/2889076842/4783413655243850011/]here[/url].
+description=ExQueaseMe currently supports English, Chinese, Spanish, French and Russian.  You can contrbute translations [url=https://steamcommunity.com/workshop/filedetails/discussion/2889076842/4783413655243850011/]here[/url].
 description=
 description=[h1]Built for RoyaleWithCheese[/h1]
 description=ExQueaseMe was built for the RoyaleWithCheeseTV [i](aka: Jennifer)[/i] multiplayer server. It's 100% designed to suit their needs and their use-case.  Check out his stream on [url=https://twitch.tv/royalewithcheesetv[/url]Twitch[/url]
